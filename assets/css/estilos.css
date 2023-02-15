@@ -60,3 +60,10 @@ header img {
     border-radius: 5px;
     font-family: 'Palanquin Dark', sans-serif;;
 }
+.fotter-img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-left: 30px;
+    width: 50px;
+}
