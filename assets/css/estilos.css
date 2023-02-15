@@ -1,27 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-body{
-    background-color: rgb(51, 48, 45);
+body {
+    background-color: rgb(209, 190, 171);
 }
 
-header{
+header {
     display: flex;
     width: 100vw;
     justify-content: center;
     align-items: center;
 }
 
-header nav a{
+header nav a {
     text-decoration: none;
     font-size: 2rem;
     color: cadetblue;
 }
-header nav a:hover{
+
+header nav a:hover {
     color: darkcyan;
 }
 
@@ -30,8 +31,32 @@ header img {
     width: 100px;
 }
 
-.nav1, .nav2 {
+.nav1,
+.nav2 {
     display: flex;
     gap: 40px;
 }
 
+.main-contact {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.form-label{
+    font-family: 'Palanquin Dark', sans-serif;
+}
+.form-control{
+    font-family: 'Palanquin Dark', sans-serif;
+}
+#contact-us {
+    min-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(143, 125, 107); ;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Palanquin Dark', sans-serif;;
+}
