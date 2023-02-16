@@ -24,9 +24,11 @@ export function addItem(list, element) {
         card.producto
       }</a></h4>
                       <div class="product-bottom-details">
-                        <div class="product-price"><small>$${
-                          card.precio
-                        }</small>$${card.precio * 0.8}</div>
+                        <div class="product-price"><p class="${
+                          card.disponibles < 5 ? "descuento" : "ocultar"
+                        }">$${card.precio}</p><p class="precio">$${
+        card.precio * 0.8
+      }</p></div>
                         <div class="product-links">
                           <a href=""><i class="bi bi-cart"></i></a>
                         </div>
@@ -49,4 +51,10 @@ export async function getData(url) {
   } catch (error) {
     console.log(error);
   }
+}
+export function nameFilter(list, value) {
+  return list.filter((event) => {
+    let nameArray = event.producto.toLowerCase().split(" ");
+    return nameArray.find((name) => name.startsWith(value));
+  });
 }
