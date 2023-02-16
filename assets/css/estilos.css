@@ -71,6 +71,17 @@ header img {
     flex-wrap: wrap;
 
 }
+@media (min-width:320px) and (max-width:600px){
+    .Contacto{
+        margin-bottom: 3%;
+        flex-direction: column;
+    }
+    .container-a{
+       gap: 10px;
+        
+
+    }
+}
 .fotter-img{
     width: 50px;
     min-height: 20vh;
@@ -80,9 +91,11 @@ header img {
 }
 .container-a{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 8rem;
+    gap:20px;
+  
 }
 #mapa{
     border: 2px solid blanchedalmond;
