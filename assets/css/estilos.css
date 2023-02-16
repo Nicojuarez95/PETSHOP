@@ -53,9 +53,9 @@ header img {
 .form-control{
     font-family: 'Palanquin Dark', sans-serif;
 }
-#formulario {
+.formulario {
     min-width: 30%;
-    background-color:rgb(143, 125, 107); ;
+    background-color:rgba(153, 131, 108, 0.767); ;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -64,6 +64,7 @@ header img {
 }
 
 .Contacto{
+    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
