@@ -6,12 +6,13 @@
 }
 
 body {
+    width: 100%;
     background-color: rgb(209, 190, 171);
 }
 
 header {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -37,7 +38,7 @@ header img {
     gap: 40px;
 }
 
-.main-contact {
+.main-contacto {
     
     display: flex;
     flex-direction: column;
@@ -47,23 +48,48 @@ header img {
 }
 .form-label{
     font-family: 'Palanquin Dark', sans-serif;
+    margin:5px;
 }
 .form-control{
     font-family: 'Palanquin Dark', sans-serif;
 }
-#contact-us {
-    min-width: 30rem;
+#formulario {
+    min-width: 30%;
+    background-color:rgb(143, 125, 107); ;
     display: flex;
     flex-direction: column;
-    background-color:rgb(143, 125, 107); ;
     padding: 10px;
     border-radius: 5px;
     font-family: 'Palanquin Dark', sans-serif;;
 }
+
+.Contacto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
 .fotter-img{
+    width: 50px;
+    min-height: 20vh;
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
-    margin-left: 30px;
-    width: 50px;
+    
+}
+.container-a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem;
+}
+#mapa{
+    border: 2px solid blanchedalmond;
+    margin-right: 10px;
+    gap:2rem;
+    display: flex;
+    justify-content: center;
+}
+.titulo-mapa{
+    display: flex;
+    align-items: center;
 }
