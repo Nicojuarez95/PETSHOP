@@ -8,31 +8,36 @@ export function addItem(list, element) {
   if (list.length != 0) {
     for (let card of list) {
       template += `<div class="product-card">
+
                     <div class="${
                       card.disponibles < 5 ? "badge" : "ocultar"
                     }"</div>Ultimas unidades</div>
+
                     <div class="product-tumb">
                       <img
                         src=${card.imagen}
                         alt=${card.producto.replaceAll(" ", "")} />
                     </div>
+
                     <div class="product-details">
+
                       <span class="product-catagory">Disponibles: ${
                         card.disponibles
                       }</span>
-                      <h4><a href="./detalles.html?id=${card._id}">${
-        card.producto
-      }</a></h4>
+                      <h4><a href="./detalles.html?id=${card._id}">${card.producto}</a></h4>
+
                       <div class="product-bottom-details">
                         <div class="product-price"><p class="${
                           card.disponibles < 5 ? "descuento" : "ocultar"
-                        }">$${card.precio}</p><p class="precio">$${
-        card.precio * 0.8
-      }</p></div>
+                          }">$${card.precio}</p><p class="precio">$${card.precio * 0.8}</p>
+                        </div>
+
                         <div class="product-links">
                           <a href=""><i class="bi bi-cart"></i></a>
                         </div>
+                        
                       </div>
+
                     </div>
                   </div>`;
     }
