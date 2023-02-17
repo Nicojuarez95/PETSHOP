@@ -75,9 +75,11 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
+
 .logo-footer {
   width: 200px;
 }
+
 #textFooter {
   display: flex;
   flex-direction: column;
@@ -86,6 +88,7 @@ footer {
   color: #ececec;
   font-family: "Palanquin Dark", sans-serif;
 }
+
 /*tarjetas informacion index*/
 
 .servicios {
@@ -261,17 +264,6 @@ section:hover {
   font-family: "Palanquin Dark", sans-serif;
 }
 
-@media (min-width: 320px) and (max-width: 600px) {
-  .Contacto {
-    margin-bottom: 3%;
-    flex-direction: column;
-  }
-
-  .container-a {
-    gap: 10px;
-  }
-}
-
 #mapa {
   border: 2px solid blanchedalmond;
   margin-right: 10px;
@@ -291,6 +283,7 @@ section:hover {
   padding-right: 40px;
 }
 
+/*pagina details*/
 .imagen-details {
   display: flex;
   flex-direction: column;
@@ -320,6 +313,7 @@ section:hover {
   flex-direction: column;
   min-height: 85vh;
 }
+
 .contenedor-jf {
   display: flex;
   flex-wrap: wrap;
@@ -443,12 +437,15 @@ section:hover {
 .product-links button:hover {
   color: #fbb72c;
 }
+
 .ocultar {
   display: none;
 }
+
 .descuento {
   display: inline;
 }
+
 .precio {
   display: inline;
   margin-left: 15px;
@@ -483,7 +480,7 @@ section:hover {
   text-shadow: 0 1px #0091c2;
 }
 
-.search > div {
+.search>div {
   display: inline-block;
   position: relative;
   filter: drop-shadow(0 1px #0091c2);
@@ -513,25 +510,384 @@ section:hover {
   transition: width 0.5s;
 }
 
-.isearch > input::placeholder {
+.isearch>input::placeholder {
   color: #efefef;
   opacity: 0;
   transition: opacity 150ms ease-out;
 }
 
-.isearch > input:focus::placeholder {
+.isearch>input:focus::placeholder {
   opacity: 1;
 }
 
-.isearch > input:focus,
-.isearch > input:not(:placeholder-shown) {
+.isearch>input:focus,
+.isearch>input:not(:placeholder-shown) {
   width: 250px;
 }
-.aAumentar {
-  border: none;
-  background-color: transparent;
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body {
+  background-color: rgb(233, 233, 233);
+  overflow-x: hidden;
 }
-.aDisminuir {
-  border: none;
-  background-color: transparent;
+
+  main {
+    min-width: 320px;
+    max-width: 768px;
+    min-height: 200vh;
+  }
+
+  /*index */
+  /*header hay que cambiar por menu hamburguesa*/
+
+  /*carrusel*/
+  #img-carrusel {
+    width: 100%;
+   height: 12rem;
+  }
+
+  /*tarjeta quienes somos*/
+  #tex-quienesSomos-titulo{
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+  #tajInfo {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: justify;
+    color: #6a638c;
+  }
+
+  #img-quienesSomos {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+  }
+
+  #textoinfo {
+    width: 20rem;
+  }
+
+  /*tarjetas info servicos*/
+
+  #containerCards {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 80rem;
+ 
+  }
+
+  #card {
+
+    width: 20rem;
+    height: 40rem;
+    border: 4px solid #968dcc;
+    background-color: #968dcc38;
+    align-content: center;
+    text-align: center;
+  }
+  .card-body{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 300px;
+  }
+  .card-body h5{
+    font-size: 1.9rem;
+  }
+  .card-body p{
+    font-size: 1rem;
+  }
+
+  #tarj-1 {
+    background-image: url("https://www.udla.edu.ec/wp-content/uploads/2013/08/iStock-181857798.jpg");
+    background-size: cover;
+    background-position: center;
+    height:20rem;
+    width: 100%;
+
+  }
+
+  #tarj-2 {
+    background-image: url("https://d2qc4bb64nav1a.cloudfront.net/cdn/13/images/curso-cuidados-de-un-perro_l_secundaria_1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 100%;
+
+  }
+
+  #tarj-3 {
+    background-image: url("https://img.lalr.co/cms/2015/07/09125807/mascotas.jpg?size=sm");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 100%;
+
+  }
+
+  #tarj-4 {
+    background-image: url("https://www.mitiendademascotas.com/web/angostura/wp-content/uploads/sites/12/2017/07/Apertura2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 100%;
+  }
+  /*galeria*/
+  section {
+    display: none;
+  }
+
+  /*footer*/
+
+  footer {
+    background: #968dcc;
+    display: flex;
+    flex-direction: column;
+    min-width: 50vh;
+    min-height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1px;
+  }
+
+  .container-redes {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .fotter-img {
+    width: 50px;
+    min-height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo-footer {
+    width: 200px;
+  }
+
+  #textFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ececec;
+    font-family: "Palanquin Dark", sans-serif;
+  }
+
+  /*pagina contacto*/
+  .Contacto {
+    margin-bottom: 3%;
+    flex-direction: column;
+  }
+
+  .container-a {
+    gap: 10px;
+  }
 }
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  body {
+  background-color: rgb(233, 233, 233);
+  overflow-x: hidden;
+}
+.nav1,
+.nav2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+header img {
+  width: 9rem;
+}
+
+  main {
+    min-width: 320px;
+    max-width: 768px;
+    min-height: 200vh;
+  }
+
+  /*index */
+  /*header hay que cambiar por menu hamburguesa*/
+
+  /*carrusel*/
+  #img-carrusel {
+    width: 100%;
+   height: 21rem;
+  }
+
+  /*tarjeta quienes somos*/
+
+  #tajInfo {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: justify;
+    color: #6a638c;
+  }
+
+  #tex-quienesSomos-titulo{
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+  }
+
+  #img-quienesSomos {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+  }
+
+  #textoinfo {
+    width: 20rem;
+  }
+
+  .servicios{
+    font-size: 4rem;
+  }
+  /*tarjetas info servicos*/
+
+  #containerCards {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 80rem;
+ 
+  }
+
+  #card {
+    width: 40rem;
+    height: 65rem;
+    border: 4px solid #968dcc;
+    background-color: #968dcc38;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+
+  .carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-body{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 300px;
+  }
+  .card-body h5{
+    font-size: 2.7rem;
+  }
+  .card-body p{
+    font-size: 1.2rem;
+  }
+
+  #tarj-1 {
+    background-image: url("https://www.udla.edu.ec/wp-content/uploads/2013/08/iStock-181857798.jpg");
+    background-size: cover;
+    height: 20rem;
+    width: 100%;
+
+  }
+
+  #tarj-2 {
+    background-image: url("https://d2qc4bb64nav1a.cloudfront.net/cdn/13/images/curso-cuidados-de-un-perro_l_secundaria_1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 100%;
+
+  }
+
+  #tarj-3 {
+    background-image: url("https://img.lalr.co/cms/2015/07/09125807/mascotas.jpg?size=sm");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 100%;
+
+  }
+
+  #tarj-4 {
+    background-image: url("https://www.mitiendademascotas.com/web/angostura/wp-content/uploads/sites/12/2017/07/Apertura2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 100%;
+  }
+  /*galeria*/
+  section {
+    display: none;
+  }
+
+  /*footer*/
+
+  footer {
+    background: #968dcc;
+    display: flex;
+    min-width: 50vh;
+    min-height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1px;
+  }
+
+  .container-redes {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .fotter-img {
+    width: 50px;
+    min-height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo-footer {
+    width: 200px;
+  }
+
+  #textFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ececec;
+    font-family: "Palanquin Dark", sans-serif;
+  }
+
+  /*pagina contacto*/
+  .Contacto {
+    margin-bottom: 3%;
+    flex-direction: column;
+  }
+
+  .container-a {
+    gap: 10px;
+  }
+}
+
+
+
