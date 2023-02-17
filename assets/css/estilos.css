@@ -2,382 +2,363 @@
 /* #968dcc */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Palanquin Dark', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Palanquin Dark", sans-serif;
 }
 
 main {
-    min-height: 80vh;
+  min-height: 80vh;
 }
 
 body {
-    background-color: rgb(233, 233, 233);
-    overflow-x: hidden;
+  background-color: rgb(233, 233, 233);
+  overflow-x: hidden;
 }
 
 header {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background: #968dcc;
-    height: 12vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #968dcc;
+  height: 12vh;
 }
 
 header nav a {
-    text-decoration: none;
-    font-size: 2rem;
-    color: rgb(209, 190, 171);
-    
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgb(209, 190, 171);
 }
 
 header nav a:hover {
-    color: rgb(63, 50, 66);
+  color: rgb(63, 50, 66);
 }
 
 header img {
-    margin: 0.5rem;
-    width: 10rem;
+  margin: 0.5rem;
+  width: 10rem;
 }
 
 .nav1,
 .nav2 {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 /*carrusel*/
 
 #img-carrusel {
-    width: 100%;
-    height: 42rem;
+  width: 100%;
+  height: 42rem;
 }
-
 
 /*footer*/
 
-
 footer {
-    background: #968dcc;
-    display: flex;
-    min-height: 5vh;
-    justify-content: space-around;
-    gap: 50px;
+  background: #968dcc;
+  display: flex;
+  min-height: 5vh;
+  justify-content: space-around;
+  gap: 50px;
 }
 
 .container-redes {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .fotter-img {
-    width: 50px;
-    min-height: 20vh;
-    display: flex;
-    flex-wrap: wrap;
-
+  width: 50px;
+  min-height: 20vh;
+  display: flex;
+  flex-wrap: wrap;
 }
-.logo-footer{
-    width: 200px;
+.logo-footer {
+  width: 200px;
 }
-#textFooter{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1rem;
-    color: #ececec;
-    font-family: 'Palanquin Dark', sans-serif;
-} 
+#textFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  color: #ececec;
+  font-family: "Palanquin Dark", sans-serif;
+}
 /*tarjetas informacion index*/
 
-.servicios{
-    text-align: center;
-    color: #968dcc;
-    font-size: 2.5rem;
-    font-family: 'Palanquin Dark', sans-serif;
-    margin-bottom: 30px;
+.servicios {
+  text-align: center;
+  color: #968dcc;
+  font-size: 2.5rem;
+  font-family: "Palanquin Dark", sans-serif;
+  margin-bottom: 30px;
 }
 
 #containerCards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-    height: 30vh;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  height: 30vh;
+  margin-bottom: 40px;
 }
 
 #card {
-    display: flex;
-    margin-top: 22px;
-    width: 35rem;
-    height: 15.5rem;
-    border: 4px solid #968dcc;
-    background-color: #968dcc38;
-    align-content: center;
+  display: flex;
+  margin-top: 22px;
+  width: 35rem;
+  height: 15.5rem;
+  border: 4px solid #968dcc;
+  background-color: #968dcc38;
+  align-content: center;
 }
 
 #tarj-1 {
-    background-image: url("https://www.udla.edu.ec/wp-content/uploads/2013/08/iStock-181857798.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 15rem;
-    width: 10rem;
+  background-image: url("https://www.udla.edu.ec/wp-content/uploads/2013/08/iStock-181857798.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  width: 10rem;
 }
 
 #tarj-2 {
-    background-image: url("https://d2qc4bb64nav1a.cloudfront.net/cdn/13/images/curso-cuidados-de-un-perro_l_secundaria_1.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 15rem;
-    width: 10rem;
+  background-image: url("https://d2qc4bb64nav1a.cloudfront.net/cdn/13/images/curso-cuidados-de-un-perro_l_secundaria_1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  width: 10rem;
 }
 
 #tarj-3 {
-    background-image: url("https://img.lalr.co/cms/2015/07/09125807/mascotas.jpg?size=sm");
-    background-size: cover;
-    background-position: center;
-    height: 15rem;
-    width: 10rem;
+  background-image: url("https://img.lalr.co/cms/2015/07/09125807/mascotas.jpg?size=sm");
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  width: 10rem;
 }
 
 #tarj-4 {
-    background-image: url("https://www.mitiendademascotas.com/web/angostura/wp-content/uploads/sites/12/2017/07/Apertura2.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 15rem;
-    width: 10rem;
+  background-image: url("https://www.mitiendademascotas.com/web/angostura/wp-content/uploads/sites/12/2017/07/Apertura2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  width: 10rem;
 }
-
-
 
 h5,
 #textCard,
 #text-card,
 small {
-    font-family: 'Palanquin Dark', sans-serif;
-
+  font-family: "Palanquin Dark", sans-serif;
 }
 
 /*galeria index*/
 section {
-    display: flex;
-    width: 100%;
-    height: 20rem;
+  display: flex;
+  width: 100%;
+  height: 20rem;
 }
 
 section img {
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: 1s ease;
-
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 1s ease;
 }
 
 section:hover {
-    width: 18.7rem;
-    opacity: 1;
-    filter: contrast(120%);
-    object-fit: cover;
+  width: 18.7rem;
+  opacity: 1;
+  filter: contrast(120%);
+  object-fit: cover;
 }
 
 #imageCardGalleria {
-    width: 5rem;
-    height: 20rem;
+  width: 5rem;
+  height: 20rem;
 }
 
 #imageCardGalleria:hover {
-    transform: scale(1);
-    opacity: 1;
-    width: 35rem;
-    opacity: 1;
-    filter: contrast(120%);
+  transform: scale(1);
+  opacity: 1;
+  width: 35rem;
+  opacity: 1;
+  filter: contrast(120%);
 }
 
 /*tarjetas informacion*/
 
-
 #tajInfo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    text-align: justify;
-    color: #6a638c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: justify;
+  color: #6a638c;
 }
 
 #img-quienesSomos {
-    width: 25rem;
-    height: 25rem;
-    border-radius:50%;
-    margin: 2rem;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  margin: 2rem;
 }
 
 #textoinfo {
-    width: 40rem;
-    margin: 2rem;
+  width: 40rem;
+  margin: 2rem;
 }
 
 #text-quienesSomos {
-    font-size: 1.5rem;
-    font-family: 'Palanquin Dark', sans-serif;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    justify-items: flex-start;
-    text-align: justify;
+  font-size: 1.5rem;
+  font-family: "Palanquin Dark", sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  justify-items: flex-start;
+  text-align: justify;
 }
 
 #text-quienesSomos-titulo {
-    font-size: 2rem;
-    color: #968dcc;
-    font-family: 'Palanquin Dark', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    justify-items: center;
-    text-align: start;
+  font-size: 2rem;
+  color: #968dcc;
+  font-family: "Palanquin Dark", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  justify-items: center;
+  text-align: start;
 }
 
 /**/
 
 .main-contacto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
 }
 
 .form-label {
-    font-family: 'Palanquin Dark', sans-serif;
-    margin: 5px;
+  font-family: "Palanquin Dark", sans-serif;
+  margin: 5px;
 }
 
 .form-control {
-    font-family: 'Palanquin Dark', sans-serif;
+  font-family: "Palanquin Dark", sans-serif;
 }
 
 .formulario {
-    min-width: 30%;
-    background-color: rgba(153, 131, 108, 0.767);
-    ;
-    display: flex;
+  min-width: 30%;
+  background-color: rgba(153, 131, 108, 0.767);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Palanquin Dark", sans-serif;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .Contacto {
+    margin-bottom: 3%;
     flex-direction: column;
-    padding: 10px;
-    border-radius: 5px;
-    font-family: 'Palanquin Dark', sans-serif;
-    ;
+  }
+
+  .container-a {
+    gap: 10px;
+  }
 }
-
-
-@media (min-width:320px) and (max-width:600px) {
-    .Contacto {
-        margin-bottom: 3%;
-        flex-direction: column;
-    }
-
-    .container-a {
-        gap: 10px;
-
-
-    }
-}
-
-
-
 
 #mapa {
-    border: 2px solid blanchedalmond;
-    margin-right: 10px;
-    gap: 2rem;
-    
+  border: 2px solid blanchedalmond;
+  margin-right: 10px;
+  gap: 2rem;
 }
 
 .titulo-mapa {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .producto-detalles {
-    margin: 50px;
-    display: flex;
-    gap: 30px;
-    position: relative;
-    padding-right: 40px;
+  margin: 50px;
+  display: flex;
+  gap: 30px;
+  position: relative;
+  padding-right: 40px;
 }
 
-.imagen-details{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 80%;
+.imagen-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 80%;
 }
 
-.imagen-details img{
-    width: 100%;
+.imagen-details img {
+  width: 100%;
 }
 
-.contenido-detalle{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
+.contenido-detalle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
 }
 
 /*estilo cartas y search
 /*prueba*/
 
 .main-jf {
-    display: flex;
-    flex-direction: column;
-    min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 85vh;
 }
 .contenedor-jf {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    width: 100vw;
-    padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100vw;
+  padding: 15px;
 }
 
-
 .product-card {
-    width: 380px;
-    position: relative;
-    box-shadow: 0 2px 7px #dfdfdf;
-    background: #968dccb8;
-    border: 4px solid #968dcc;
-    border-radius: 20px;
+  width: 380px;
+  position: relative;
+  box-shadow: 0 2px 7px #dfdfdf;
+  background: #968dccb8;
+  border: 4px solid #968dcc;
+  border-radius: 20px;
 }
 
 .badge {
-    position: absolute;
-    left: 0;
-    top: 20px;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 700;
-    background: red;
-    color: #fff;
-    padding: 3px 10px;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  background: red;
+  color: #fff;
+  padding: 3px 10px;
 }
 
 .product-tumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    padding: 30px;
-    background: white;
-    border-top-left-radius:  20px;
-    border-top-right-radius: 20px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  padding: 30px;
+  background: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .product-tumb img {
@@ -449,15 +430,17 @@ section:hover {
   text-align: right;
 }
 
-.product-links a {
+.product-links button {
   display: inline-block;
   margin-left: 5px;
   color: #000000;
   transition: 0.3s;
   font-size: 27px;
+  border: none;
+  background-color: transparent;
 }
 
-.product-links a:hover {
+.product-links button:hover {
   color: #fbb72c;
 }
 .ocultar {
@@ -474,7 +457,7 @@ section:hover {
 /*search*/
 
 .flexbox {
-  background:rgb(161, 91, 218);
+  background: rgb(161, 91, 218);
   width: 100%;
   height: 100%;
   display: flex;
