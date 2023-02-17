@@ -77,15 +77,13 @@ export function readStorage(key) {
   return JSON.parse(localStorage.getItem(key)) || [];
 }
 export function updateState(e, carrito, items) {
-  if (e.target.localName === "i") {
-    if (carrito.some((car) => car._id == e.target.id)) {
-      carrito = carrito.filter((car) => car._id != e.target.id);
-      e.target.classList.replace("bi-cart-check", "bi-cart");
-    } else {
-      carrito.push(items.find((item) => item._id == e.target.id));
-      e.target.classList.replace("bi-cart", "bi-cart-check");
-    }
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-    return carrito;
+  if (carrito.some((car) => car._id == e.target.id)) {
+    carrito = carrito.filter((car) => car._id != e.target.id);
+    e.target.classList.replace("bi-cart-check", "bi-cart");
+  } else {
+    carrito.push(items.find((item) => item._id == e.target.id));
+    e.target.classList.replace("bi-cart", "bi-cart-check");
   }
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+  return carrito;
 }

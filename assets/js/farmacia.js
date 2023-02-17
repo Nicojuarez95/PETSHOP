@@ -19,5 +19,7 @@ $search.addEventListener("keyup", (e) => {
   addItem(nameFilter(items, e.target.value), $containerProduct, carrito);
 });
 $containerProduct.addEventListener("click", (e) => {
-  carrito = updateState(e, carrito, items);
+  if (e.target.localName === "i") {
+    carrito = updateState(e, carrito, items);
+  }
 });
