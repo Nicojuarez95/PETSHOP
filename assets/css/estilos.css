@@ -527,3 +527,11 @@ section:hover {
 .isearch > input:not(:placeholder-shown) {
   width: 250px;
 }
+.aAumentar {
+  border: none;
+  background-color: transparent;
+}
+.aDisminuir {
+  border: none;
+  background-color: transparent;
+}

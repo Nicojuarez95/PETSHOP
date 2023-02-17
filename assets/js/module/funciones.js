@@ -80,10 +80,84 @@ export function updateState(e, carrito, items) {
   if (carrito.some((car) => car._id == e.target.id)) {
     carrito = carrito.filter((car) => car._id != e.target.id);
     e.target.classList.replace("bi-cart-check", "bi-cart");
+    items.forEach((item) => {
+      carrito.some((car) => car._id === item._id)
+        ? (item.__v = 1)
+        : (item.__v = 0);
+    });
   } else {
-    carrito.push(items.find((item) => item._id == e.target.id));
+    let item = items.find((item) => item._id == e.target.id);
+    item.__v = 1;
+    carrito.push(item);
     e.target.classList.replace("bi-cart", "bi-cart-check");
   }
   localStorage.setItem("carrito", JSON.stringify(carrito));
   return carrito;
+}
+export function renderTabla(carrito) {
+  const carritoModal = document.querySelector("#modal-tabla");
+  const totalAcomulado = document.querySelector(".totalAcomulado");
+  let fragment = document.createDocumentFragment();
+  let localTotal = [];
+  let total = 0;
+  if (carrito.length < 1) {
+    carritoModal.innerHTML = `<tr><td colspan="5"><h5 class="text-center">No hay productos en tu carrito</h5></td></tr>`;
+    totalAcomulado.textContent = ``;
+  } else {
+    carritoModal.innerHTML = "";
+    carrito.forEach((e) => {
+      let tr = document.createElement("tr");
+      tr.innerHTML = `  
+      <th class="border-0" scope="row">
+      <div class="p-2">
+        <img
+          class="img-fluid rounded shadow-sm me-1"
+          src="${e.imagen}"
+          alt="product0"
+          width="70"
+        />
+        <div
+          class="ml-3 d-inline-block align-middle"
+        >
+          <h5 class="mb-0">
+            ${e.producto}
+          </h5>
+          <span
+            class="
+              text-muted
+              font-weight-normal font-italic
+              d-block
+            "
+            >Categoria: ${e.categoria}</span
+          >
+        </div>
+      </div>
+    </th>
+    <td class="border-0 align-middle">
+      <strong>$${e.precio}</strong>
+    </td>
+    <button class="aDisminuir"><i class="bi bi-dash-circle-fill ${
+      e._id
+    }"></i></button>
+    <td class="border-0 align-middle">
+      <strong id=${e._id}>${e.__v}</strong>
+    </td>
+    <button class="aAumentar"><i class="bi bi-plus-circle-fill ${
+      e._id
+    }"></i></button>
+    <td class="border-0 align-middle">
+    <strong id="t${e._id}">$${e.precio * e.__v}</strong>
+  </td>
+      <button class="btn btn-danger borrar-carrito" id="${e._id}" >X</button>
+  
+      `;
+      fragment.appendChild(tr);
+      localTotal.push([e._id, e.precio * e.__v]);
+      return (total += e.precio * e.__v);
+    });
+    carritoModal.appendChild(fragment);
+    localStorage.setItem("totalAcomulado", JSON.stringify(localTotal));
+    totalAcomulado.textContent = `${total}`;
+  }
+  localStorage.setItem("carrito", JSON.stringify(carrito));
 }
