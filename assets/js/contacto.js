@@ -1,7 +1,8 @@
 const formularioContainer = document.getElementById("contact-us")
 
 
-formularioContainer.addEventListener("submit", () =>{
+formularioContainer.addEventListener("submit", (e) =>{
+e.preventDefault()
 swal("¡¡ El formulario fue enviado con éxito !!", "nos pondremos en contacto lo más pronto posible", "success");
-formularioContainer.reset();
+formularioContainer.reset()
 } )
