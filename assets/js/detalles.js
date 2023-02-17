@@ -5,8 +5,6 @@ const id = params.get("id");
 
 getData(urlApi).then((data) => {
   const card = data.find((event) => event._id == id);
-  console.log(card)
-
   $container.innerHTML = `<div class="producto-detalles">
 
   <div class="${
@@ -27,8 +25,9 @@ getData(urlApi).then((data) => {
       </div>
 
       <div class="product-bottom-details">
-        <div class="product-price"><p class="${card.disponibles < 5 ? "descuento" : "ocultar"}">$${card.precio}</p><p class="precio">$${
-        card.precio * 0.8}</p></div>
+        <div class="product-price"><p class="${
+          card.disponibles < 5 ? "descuento" : "ocultar"
+        }">$${card.precio}</p><p class="precio">$${card.precio * 0.8}</p></div>
       </div>
 
       
@@ -38,8 +37,5 @@ getData(urlApi).then((data) => {
       </div>
       
     </div>
-</div>`
-  
+</div>`;
 });
-
-

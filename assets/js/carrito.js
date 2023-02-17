@@ -1,15 +1,10 @@
 import {
+  filterType,
   urlApi,
   getData,
-  filterType,
-  addItem,
-  nameFilter,
   readStorage,
-  updateState,
   renderTabla,
 } from "./module/funciones.js";
-const $containerProduct = document.querySelector(".contenedor-jf");
-const $search = document.querySelector(".isearch");
 const $btnCarrito = document.getElementById("btn-carrito");
 const $modalTabla = document.getElementById("modal-tabla");
 const $modal = document.getElementById("exampleModal");
@@ -17,20 +12,11 @@ let carrito = readStorage("carrito");
 let items;
 getData(urlApi).then((data) => {
   items = filterType(data, "jugueteria");
-  addItem(items, $containerProduct, carrito);
   items.forEach((item) => {
     carrito.some((car) => car._id === item._id)
       ? (item.__v = 1)
       : (item.__v = 0);
   });
-});
-$search.addEventListener("keyup", (e) => {
-  addItem(nameFilter(items, e.target.value), $containerProduct, carrito);
-});
-$containerProduct.addEventListener("click", (e) => {
-  if (e.target.localName === "i") {
-    carrito = updateState(e, carrito, items);
-  }
 });
 $btnCarrito.addEventListener("click", (e) => {
   renderTabla(carrito);

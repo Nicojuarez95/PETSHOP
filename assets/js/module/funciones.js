@@ -15,7 +15,9 @@ export function addItem(list, element, carrito) {
 
                     <div class="${
                       card.disponibles < 5 ? "badge" : "ocultar"
-                    }"</div>Ultimas unidades</div>
+                    }"</div>${
+        card.disponibles != 0 ? "Ultimas Unidades" : "Agotado"
+      }</div>
 
                     <div class="product-tumb">
                       <img
@@ -42,8 +44,10 @@ export function addItem(list, element, carrito) {
 
                         <div class="product-links">
                         <button><i id=${
-                          card._id
-                        } class="bi ${aux}"></i></button>
+                          card.disponibles != 0 ? card._id : "agotado"
+                        } class="bi ${
+        card.disponibles != 0 ? aux : "bi-cart-dash"
+      }"></i></button>
                         </div>
                         
                       </div>

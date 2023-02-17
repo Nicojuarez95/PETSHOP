@@ -4,20 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>farmacia</title>
+    <title>Farmacia</title>
     <link rel="shortcut icon" href="./imagen/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/estilos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   </head>
   <body>
     <header>
@@ -30,13 +32,51 @@
         <a href="./juegos.html">Juguetes</a>
         <a href="#">Farmacia</a>
       </nav>
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="btn-carrito"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        <i class="bi bi-bag-heart-fill"></i>
+      </button>
+      <div
+        class="modal fade modal-lg"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">CARRITO</h1>
+              <button
+                id="modalClose"
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-tabla"></div>
+            <div class="modal-footer">
+              <p>Total:</p>
+              <p class="totalAcomulado">0</p>
+              <button id="modalDelete" type="button" class="btn btn-primary">
+                Vaciar Carrito
+              </button>
+              <button id="modalBuy" type="button" class="btn btn-primary">
+                Realizar Compra
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-
     <main class="main-jf">
       <div class="flexbox">
         <div class="search">
           <div>
-            <h1>Busque su producto</h1>
+            <h1>Busque el producto para su mascota</h1>
             <h3>Click en el icono, luego ingrese su busqueda.</h3>
           </div>
           <div class="isearch">
@@ -45,30 +85,42 @@
         </div>
       </div>
 
-      <div class="contenedor-jf">
-
-      </div>
+      <div class="contenedor-jf"></div>
     </main>
-
     <footer>
-        <div class="container-redes">
-            <a href="https://www.instagram.com" target="_blank"><img class="fotter-img p-1"
-                    src="./imagen/insta-svgrepo-com.svg" alt="foto-insta"></a>
-            <a href="https://es-la.facebook.com" target="_blank"><img class="fotter-img p-1"
-                    src="./imagen/facebook-svgrepo-com.svg" alt="face-foto"></a>
-            <a href="https://www.whatsapp.com" target="_blank"><img class="fotter-img p-1"
-                    src="./imagen/whatsapp-svgrepo-com.svg" alt="wts-foto"></a>
-        </div>
-        <div>
-          <img class="logo-footer" src="./imagen/logo.png" alt="">
-        </div>
-        <div id="textFooter">
-           <h2><b>Visitanos</b></h2>
-           <p>Paraguay 2324 - CABA</p>
-           <P>Telefono:4786-3258</P>
-          
-        </div>
+      <div class="container-redes">
+        <a href="https://www.instagram.com" target="_blank"
+          ><img
+            class="fotter-img p-1"
+            src="./imagen/insta-svgrepo-com.svg"
+            alt="foto-insta"
+        /></a>
+        <a href="https://es-la.facebook.com" target="_blank"
+          ><img
+            class="fotter-img p-1"
+            src="./imagen/facebook-svgrepo-com.svg"
+            alt="face-foto"
+        /></a>
+        <a href="https://www.whatsapp.com" target="_blank"
+          ><img
+            class="fotter-img p-1"
+            src="./imagen/whatsapp-svgrepo-com.svg"
+            alt="wts-foto"
+        /></a>
+      </div>
+      <div>
+        <img class="logo-footer" src="./imagen/logo.png" alt="" />
+      </div>
+      <div id="textFooter">
+        <h2><b>Visitanos</b></h2>
+        <p>Paraguay 2324 - CABA</p>
+        <p>Telefono:4786-3258</p>
+      </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
     <script type="module" src="./js/farmacia.js"></script>
   </body>
 </html>
