@@ -23,55 +23,71 @@
   </head>
   <body>
     <header>
-      <nav class="nav1">
-        <a href="../index.html">Inicio</a>
-        <a href="./contact.html">Contacto</a>
-      </nav>
-      <a href="../index.html"><img src="./imagen/logo.png" alt="Logo" /></a>
-      <nav class="nav2">
-        <a href="./juegos.html">Juguetes</a>
-        <a href="./farmacia.html">Farmacia</a>
-      </nav>
-      <button
-        type="button"
-        class="btn btn-primary"
-        id="btn-carrito"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal">
-        <i class="bi bi-bag-heart-fill"></i>
-      </button>
-      <div
-        class="modal fade modal-lg"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">CARRITO</h1>
-              <button
-                id="modalClose"
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"></button>
-            </div>
-            <div class="modal-body" id="modal-tabla"></div>
-            <div class="modal-footer">
-              <p>Total:</p>
-              <p class="totalAcomulado">0</p>
-              <button id="modalDelete" type="button" class="btn btn-primary">
-                Vaciar Carrito
+      <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+              <a class="d-lg-none" href="./index.html"><img src="./imagen/logo.png" alt="Logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
               </button>
-              <button id="modalBuy" type="button" class="btn btn-primary">
-                Realizar Compra
-              </button>
-            </div>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="d-flex justify-content-center align-items-center flex-lg-row  flex-column">
+                      <nav class="nav1">
+                      <a href="../index.html">Inicio</a>
+                      <a href="./contact.html">Contacto</a>
+                      </nav>
+                      <a class="d-lg-block d-none" href="./index.html"><img src="./imagen/logo.png" alt="Logo"></a>
+                      <nav class="nav2">
+                          <a href="./juegos.html">Juguetes</a>
+                          <a href="./farmacia.html">Farmacia</a>
+                      </nav>
+                  </div>
+                  <div class="d-flex justify-content-center m-4">
+                    <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="btn-carrito"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                  <i class="bi bi-bag-heart-fill"></i>
+                  </button>  
+                  </div>
+                  
+              </div>
+          </div>
+      </nav>
+      
+    <div
+      class="modal fade modal-lg"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">CARRITO</h1>
+            <button
+              id="modalClose"
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modal-tabla"></div>
+          <div class="modal-footer">
+            <p>Total:</p>
+            <p class="totalAcomulado">0</p>
+            <button id="modalDelete" type="button" class="btn btn-primary">
+              Vaciar Carrito
+            </button>
+            <button id="modalBuy" type="button" class="btn btn-primary">
+              Realizar Compra
+            </button>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
     <main class="main-jf">
       <div class="contenedor-detalles"></div>
     </main>

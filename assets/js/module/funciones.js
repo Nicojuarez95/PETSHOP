@@ -14,11 +14,7 @@ export function addItem(list, element, carrito) {
       template += `<div class="product-card">
 
                     <div class="${
-                      card.disponibles < 5 ? "badge" : "ocultar"
-                    }"</div>${
-        card.disponibles != 0 ? "Ultimas Unidades" : "Agotado"
-      }</div>
-
+                      card.disponibles < 5 ? "badge" : "ocultar"}"</div>${card.disponibles != 0 ? "Ultimas Unidades" : "Agotado"}</div>
                     <div class="product-tumb">
                       <img
                         src=${card.imagen}
@@ -26,28 +22,20 @@ export function addItem(list, element, carrito) {
                     </div>
 
                     <div class="product-details">
-
                       <span class="product-catagory">Disponibles: ${
-                        card.disponibles
-                      }</span>
-                      <h4><a href="./detalles.html?id=${card._id}">${
-        card.producto
-      }</a></h4>
+                        card.disponibles}</span>
+                      <h4><a href="./detalles.html?id=${card._id}">${card.producto}</a></h4>
 
                       <div class="product-bottom-details">
                         <div class="product-price"><p class="${
                           card.disponibles < 5 ? "descuento" : "ocultar"
-                        }">$${card.precio}</p><p class="precio">$${
-        card.precio * 0.8
-      }</p>
+                        }">$${card.precio}</p><p class="precio">$${card.precio * 0.8}</p>
                         </div>
 
                         <div class="product-links">
                         <button><i id=${
                           card.disponibles != 0 ? card._id : "agotado"
-                        } class="bi ${
-        card.disponibles != 0 ? aux : "bi-cart-dash"
-      }"></i></button>
+                        } class="bi ${card.disponibles != 0 ? aux : "bi-cart-dash"}"></i></button>
                         </div>
                         
                       </div>
@@ -101,7 +89,8 @@ export function updateState(e, carrito, items) {
 export function renderTabla(carrito) {
   const carritoModal = document.querySelector("#modal-tabla");
   const totalAcomulado = document.querySelector(".totalAcomulado");
-  let fragment = document.createDocumentFragment();
+  let cartaCarrito = document.createElement("div");
+  cartaCarrito.className="cartaCarrito"
   let localTotal = [];
   let total = 0;
   if (carrito.length < 1) {
@@ -111,55 +100,40 @@ export function renderTabla(carrito) {
     carritoModal.innerHTML = "";
     carrito.forEach((e) => {
       let tr = document.createElement("tr");
+      tr.className="tablaFila"
       tr.innerHTML = `  
       <th class="border-0" scope="row">
-      <div class="p-2">
-        <img
-          class="img-fluid rounded shadow-sm me-1"
-          src="${e.imagen}"
-          alt="product0"
-          width="70"
-        />
-        <div
-          class="ml-3 d-inline-block align-middle"
-        >
-          <h5 class="mb-0">
-            ${e.producto}
-          </h5>
-          <span
-            class="
-              text-muted
-              font-weight-normal font-italic
-              d-block
-            "
-            >Categoria: ${e.categoria}</span
-          >
+        <div class="p-2">
+          <img class="img-fluid rounded shadow-sm me-1"src="${e.imagen}"alt="product0"width="">
+
+          <div class="ml-3 d-inline-block align-middle">
+            <h5 class="mb-0">${e.producto}</h5>
+            <span class="text-muted font-weight-normal font-italic">Categoria: ${e.categoria}</span>
+          </div>
         </div>
-      </div>
-    </th>
-    <td class="border-0 align-middle">
-      <strong>$${e.precio}</strong>
-    </td>
-    <button class="aDisminuir"><i class="bi bi-dash-circle-fill ${
-      e._id
-    }"></i></button>
-    <td class="border-0 align-middle">
-      <strong id=${e._id}>${e.__v}</strong>
-    </td>
-    <button class="aAumentar"><i class="bi bi-plus-circle-fill ${
-      e._id
-    }"></i></button>
-    <td class="border-0 align-middle">
-    <strong id="t${e._id}">$${e.precio * e.__v}</strong>
-  </td>
-      <button class="btn btn-danger borrar-carrito" id="${e._id}" >X</button>
+      </th>
+
+    <div id="cont-precios">
+      <td class="border-0">
+        <strong>$${e.precio}</strong>
+      </td>
+      <button id="botonCarritoCantidad" class="aDisminuir"><i class="bi bi-dash-circle-fill ${e._id}"></i></button>
+      <td class="border-0">
+        <strong id=${e._id}>${e.__v}</strong>
+      </td>
+      <button id="botonCarritoCantidad" class="aAumentar"><i class="bi bi-plus-circle-fill ${e._id}"></i></button>
+      <td class="border-0">
+        <strong id="t${e._id}">$${e.precio * e.__v}</strong>
+      </td>
   
+      <button class="btn btn-danger borrar-carrito" id="${e._id}" >X</button>
+    </div>
       `;
-      fragment.appendChild(tr);
+      cartaCarrito.appendChild(tr);
       localTotal.push([e._id, e.precio * e.__v]);
       return (total += e.precio * e.__v);
     });
-    carritoModal.appendChild(fragment);
+    carritoModal.appendChild(cartaCarrito);
     localStorage.setItem("totalAcomulado", JSON.stringify(localTotal));
     totalAcomulado.textContent = `${total}`;
   }

@@ -12,12 +12,12 @@ getData(urlApi).then((data) => {
   }"</div>Ultimas unidades</div>
 
   <div class="imagen-details">
-      <img src=${card.imagen} alt=${card.producto.replaceAll(" ", "")} />
+      <img id="img-det" src=${card.imagen} alt=${card.producto.replaceAll(" ", "")} />
   </div>
 
     <div class="contenido-detalle">
 
-      <div><p>${card.descripcion}</p></div>
+      <div class="descripcion"><p>${card.descripcion}</p></div>
 
       <div class="product-">
         <span class="product-catagory">Disponibles: ${card.disponibles}</span>
