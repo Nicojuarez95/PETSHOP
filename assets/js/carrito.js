@@ -106,3 +106,12 @@ $modal.addEventListener("click", (e) => {
     }
   }
 });
+
+const botonComprar = document.getElementById("modalBuy")
+
+
+botonComprar.addEventListener("click", (e) =>{
+  console.log(botonComprar)
+swal("Compra realizada con exito");
+botonComprar.reset()
+} )

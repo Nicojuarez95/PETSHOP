@@ -62,7 +62,7 @@ export async function getData(url) {
 export function nameFilter(list, value) {
   return list.filter((event) => {
     let nameArray = event.producto.toLowerCase().split(" ");
-    return nameArray.find((name) => name.startsWith(value));
+    return nameArray.find((name) => name.startsWith(value.toLowerCase()));
   });
 }
 export function readStorage(key) {

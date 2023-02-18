@@ -30,11 +30,7 @@ getData(urlApi).then((data) => {
         }">$${card.precio}</p><p class="precio">$${card.precio * 0.8}</p></div>
       </div>
 
-      
-
-      <div class="product-links">
-        <a href=""><i class="bi bi-cart"></i></a>
-      </div>
+    
       
     </div>
 </div>`;
