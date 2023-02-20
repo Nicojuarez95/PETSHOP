@@ -292,7 +292,8 @@ section:hover {
 }
 
 #mapa {
-  border: 2px solid blanchedalmond;
+  border: 4px solid #948bc3;
+  border-radius: 5px;
   margin-right: 10px;
   gap: 2rem;
 }
@@ -302,8 +303,13 @@ section:hover {
   align-items: center;
 }
 
+.contenedor-detalles{
+  display: flex;
+  justify-content: center;
+}
+
 .producto-detalles {
-  margin: 50px;
+  margin: 40px;
   display: flex;
   gap: 30px;
   position: relative;
@@ -311,6 +317,8 @@ section:hover {
   border: 5px solid #968dcc;
   background-color: #968dcc7d;
   border-radius: 20px;
+  height: 650px;
+  width: 1500px;
 }
 
 
@@ -319,6 +327,7 @@ section:hover {
 }
 .producto-detalles a{
   text-decoration: none;
+  font-size: 2.5rem;
 }
 
 /*pagina details*/
@@ -329,7 +338,7 @@ section:hover {
   padding: 0;
   margin: 0;
   height: 100%;
-  width: 60%;
+  width:90%;
 }
 .imagen-details img {
   width: 100%;
@@ -950,7 +959,14 @@ body{
     align-items: center;
     margin: 10px;
     margin-top: 30px;
-}
+    height: 750px;
+  }
+  .imagen-details{
+    height: 500px;
+  }
+  #img-det{
+    height: 100%;
+  }
 .descripcion{
   display: none;
 }
@@ -962,6 +978,7 @@ body{
   font-size: 20px;
   color: #973cad;
 }
+
 } 
 
 @media (min-width: 767px) and (max-width: 1024px) {
@@ -1152,6 +1169,17 @@ header img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 1050px;
+  }
+  .imagen-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #img-det{
+    width: 80%;
+    height: 80%;
   }
   .producto-detalles p{
     font-size: 1rem;
