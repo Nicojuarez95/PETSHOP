@@ -63,7 +63,8 @@ $modalTabla.addEventListener("click", (e) => {
     }
     let aux = totalAcomulado.map((vec) => vec[1]);
     document.querySelector(".totalAcomulado").textContent = aux.reduce(
-      (a, b) => a + b
+      (a, b) => a + b,
+      0
     );
     localStorage.setItem("carrito", JSON.stringify(carrito));
   }
