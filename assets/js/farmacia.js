@@ -12,17 +12,11 @@ const $containerProduct = document.querySelector(".contenedor-jf");
 const $search = document.querySelector(".isearch");
 const $btnCarrito = document.getElementById("btn-carrito");
 const $modalTabla = document.getElementById("modal-tabla");
-const $modal = document.getElementById("exampleModal");
 let carrito = readStorage("carrito");
 let items;
 getData(urlApi).then((data) => {
   items = filterType(data, "farmacia");
   addItem(items, $containerProduct, carrito);
-  items.forEach((item) => {
-    carrito.some((car) => car._id === item._id)
-      ? (item.__v = 1)
-      : (item.__v = 0);
-  });
 });
 $search.addEventListener("keyup", (e) => {
   addItem(nameFilter(items, e.target.value), $containerProduct, carrito);
@@ -103,21 +97,6 @@ $modalTabla.addEventListener("click", (e) => {
         (a, b) => a + b
       );
     } else {
-      document.querySelector(".totalAcomulado").textContent = 0;
-    }
-  }
-});
-$modal.addEventListener("click", (e) => {
-  if (e.target.localName === "button") {
-    if (e.target.id === "modalClose") {
-      setTimeout(function () {
-        location.reload();
-      }, 300);
-    } else if (e.target.id === "modalDelete") {
-      $modalTabla.innerHTML = `<i class="bi bi-cart-x"></i>`;
-      carrito = [];
-      localStorage.setItem("totalAcomulado", JSON.stringify([]));
-      localStorage.setItem("carrito", JSON.stringify(carrito));
       document.querySelector(".totalAcomulado").textContent = 0;
     }
   }

@@ -1,17 +1,11 @@
-import {
-  filterType,
-  urlApi,
-  getData,
-  readStorage,
-  renderTabla,
-} from "./module/funciones.js";
+import {urlApi, getData, readStorage, renderTabla} from "./module/funciones.js";
 const $btnCarrito = document.getElementById("btn-carrito");
 const $modalTabla = document.getElementById("modal-tabla");
 const $modal = document.getElementById("exampleModal");
+const botonComprar = document.getElementById("modalBuy");
 let carrito = readStorage("carrito");
-let items;
 getData(urlApi).then((data) => {
-  items = filterType(data, "jugueteria");
+  let items = data;
   items.forEach((item) => {
     carrito.some((car) => car._id === item._id)
       ? (item.__v = 1)
@@ -106,12 +100,8 @@ $modal.addEventListener("click", (e) => {
     }
   }
 });
-
-const botonComprar = document.getElementById("modalBuy")
-
-
-botonComprar.addEventListener("click", (e) =>{
-  console.log(botonComprar)
-swal("Compra realizada con exito");
-botonComprar.reset()
-} )
+botonComprar.addEventListener("click", (e) => {
+  console.log(botonComprar);
+  swal("Compra realizada con exito");
+  botonComprar.reset();
+});
