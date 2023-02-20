@@ -92,7 +92,7 @@ $modal.addEventListener("click", (e) => {
         location.reload();
       }, 300);
     } else if (e.target.id === "modalDelete") {
-      $modalTabla.innerHTML = `<i class="bi bi-cart-x"></i>`;
+      $modalTabla.innerHTML = `<h5>No hay productos en tu carrito</h5>`;
       carrito = [];
       localStorage.setItem("totalAcomulado", JSON.stringify([]));
       localStorage.setItem("carrito", JSON.stringify(carrito));

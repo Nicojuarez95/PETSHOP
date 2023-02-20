@@ -27,11 +27,10 @@ header {
   min-height: 8vh;
 }
 
-.patita{
+.patita {
   width: 35px;
   margin: 0;
 }
-
 
 header nav a {
   text-decoration: none;
@@ -126,15 +125,15 @@ footer {
   align-content: center;
   box-shadow: -5px -5px 10px 3px;
 }
-.carta{
+.carta {
   display: flex;
   align-items: center;
 }
-.card-title{
+.card-title {
   font-size: 2rem;
   color: #565175 !important;
 }
-.card-body{
+.card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -259,7 +258,7 @@ section:hover {
   justify-items: center;
   text-align: start;
 }
-#tex-quienesSomos-titulo{
+#tex-quienesSomos-titulo {
   font-size: 3rem;
   color: #968dcc;
 }
@@ -303,7 +302,7 @@ section:hover {
   align-items: center;
 }
 
-.contenedor-detalles{
+.contenedor-detalles {
   display: flex;
   justify-content: center;
 }
@@ -321,11 +320,10 @@ section:hover {
   width: 1500px;
 }
 
-
-.producto-detalles p{
+.producto-detalles p {
   font-size: 1.7rem;
 }
-.producto-detalles a{
+.producto-detalles a {
   text-decoration: none;
   font-size: 2.5rem;
 }
@@ -338,7 +336,7 @@ section:hover {
   padding: 0;
   margin: 0;
   height: 100%;
-  width:90%;
+  width: 90%;
 }
 .imagen-details img {
   width: 100%;
@@ -349,10 +347,9 @@ section:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
+
   width: 80%;
 }
-
 
 /*estilo cartas y search
 /*prueba*/
@@ -424,7 +421,7 @@ section:hover {
   font-weight: 700;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
-  background-color:#968dcc;
+  background-color: #968dcc;
   margin-bottom: 18px;
 }
 
@@ -490,7 +487,7 @@ section:hover {
   margin-bottom: 10px;
 }
 
-#agotado{
+#agotado {
   color: red !important;
 }
 
@@ -543,7 +540,7 @@ section:hover {
   text-shadow: 0 1px #0091c2;
 }
 
-.search>div {
+.search > div {
   display: inline-block;
   position: relative;
   filter: drop-shadow(0 1px #0091c2);
@@ -573,30 +570,30 @@ section:hover {
   transition: width 0.5s;
 }
 
-.isearch>input::placeholder {
+.isearch > input::placeholder {
   color: #efefef;
   opacity: 0;
   transition: opacity 150ms ease-out;
 }
 
-.isearch>input:focus::placeholder {
+.isearch > input:focus::placeholder {
   opacity: 1;
 }
 
-.isearch>input:focus,
-.isearch>input:not(:placeholder-shown) {
+.isearch > input:focus,
+.isearch > input:not(:placeholder-shown) {
   width: 250px;
 }
 
 /*contact*/
-.tarjetas{
+.tarjetas {
   display: flex;
   justify-content: space-evenly;
   margin: 4vh;
   align-items: center;
   gap: 10px;
 }
-.cont-tarjeta{
+.cont-tarjeta {
   border: 2px solid #968dcc;
   background-color: #968dccb3;
   border-radius: 20px;
@@ -611,17 +608,17 @@ section:hover {
   text-align: center;
 }
 
-.cont-tarjeta a{
+.cont-tarjeta a {
   text-decoration: none;
   text-align: center;
   color: #941fe8;
 }
 
-.cont-tarjeta a:hover{
-color: #80427e;
+.cont-tarjeta a:hover {
+  color: #80427e;
 }
 
-.titulo-tarjeta{
+.titulo-tarjeta {
   font-size: 20px;
 }
 
@@ -632,65 +629,62 @@ color: #80427e;
   margin: 15px;
   margin-top: 8vh;
   align-items: self-start;
-  
 }
-.cont-mapa{
+.cont-mapa {
   margin-top: 50px;
   width: 460px;
-  
 }
-iframe{
-  width:100%;
+iframe {
+  width: 100%;
   height: 39rem;
 }
-#container-contact{
+#container-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
-.title-contact{
+.title-contact {
   font-size: 25px;
 }
-.subtitle-contact{
+.subtitle-contact {
   font-size: 19px;
   text-align: center;
 }
 
 .form-label {
-    font-family: 'Palanquin Dark', sans-serif;
-    margin: 5px;
+  font-family: "Palanquin Dark", sans-serif;
+  margin: 5px;
 }
 
 .form-control {
-    font-family: 'Palanquin Dark', sans-serif;
+  font-family: "Palanquin Dark", sans-serif;
 }
 
 .formulario {
-    min-width: 32%;
-    border: 4px solid #968dcc;
-    background-color: #968dcc63;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border-radius: 5px;
-    font-family: 'Palanquin Dark', sans-serif;
-    width: 50vh;
+  min-width: 32%;
+  border: 4px solid #968dcc;
+  background-color: #968dcc63;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Palanquin Dark", sans-serif;
+  width: 50vh;
 }
 
-#buttom-contact{
+#buttom-contact {
   border: 1px solid white;
   background-color: #6a638c;
 }
-.modal-body{
+.modal-body {
   display: flex;
   flex-direction: row;
 }
-.cartaCarrito{
+.cartaCarrito {
   width: 100%;
   border: 1px solid rgb(154, 154, 154);
 }
-.tablaFila{
+.tablaFila {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -698,50 +692,48 @@ iframe{
   background-color: #ececec;
   padding: 10px;
 }
-#botonCarritoCantidad{
+#botonCarritoCantidad {
   border: none;
 }
 
 /*contact*/
 
 @media (min-width: 320px) and (max-width: 767px) {
-body{
-  overflow-x: hidden;
-}
-
-.Contacto {
-  margin-bottom: 3%;
-  flex-direction: column;
-}
-
-.container-a {
-    gap: 10px;
-}
-.main-contacto{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-
-}
-.cont-mapa{
-  margin-top: 3vh;
-}
- .tarjetas{
-  display: flex;
-  flex-direction: column;
-}
-.cont-tarjeta{
-  width: 24vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
   body {
-  background-color: rgb(233, 233, 233);
-  overflow-x: hidden;
-}
+    overflow-x: hidden;
+  }
+
+  .Contacto {
+    margin-bottom: 3%;
+    flex-direction: column;
+  }
+
+  .container-a {
+    gap: 10px;
+  }
+  .main-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .cont-mapa {
+    margin-top: 3vh;
+  }
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+  }
+  .cont-tarjeta {
+    width: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  */ body {
+    background-color: rgb(233, 233, 233);
+    overflow-x: hidden;
+  }
 
   /*index */
   /*header hay que cambiar por menu hamburguesa*/
@@ -749,21 +741,20 @@ body{
   /*carrusel*/
   #img-carrusel {
     width: 100%;
-   height: 12rem;
+    height: 12rem;
   }
 
-  #tex-quienesSomos{
+  #tex-quienesSomos {
     padding: 5px;
   }
   /*tarjeta quienes somos*/
-  #tex-quienesSomos-titulo{
+  #tex-quienesSomos-titulo {
     font-size: 2.2rem;
     margin: 0;
     padding: 10px;
-    }
+  }
 
   #tajInfo {
-   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -803,19 +794,19 @@ body{
     text-align: center;
   }
 
-  .carta{
+  .carta {
     flex-direction: column;
   }
-  .card-body{
+  .card-body {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     height: 300px;
   }
-  .card-body h5{
+  .card-body h5 {
     font-size: 1.9rem;
   }
-  .card-body p{
+  .card-body p {
     font-size: 1rem;
   }
 
@@ -823,9 +814,8 @@ body{
     background-image: url("https://www.udla.edu.ec/wp-content/uploads/2013/08/iStock-181857798.jpg");
     background-size: cover;
     background-position: center;
-    height:20rem;
+    height: 20rem;
     width: 100%;
-
   }
 
   #tarj-2 {
@@ -834,7 +824,6 @@ body{
     background-position: center;
     height: 20rem;
     width: 100%;
-
   }
 
   #tarj-3 {
@@ -843,7 +832,6 @@ body{
     background-position: center;
     height: 20rem;
     width: 100%;
-
   }
 
   #tarj-4 {
@@ -897,7 +885,7 @@ body{
   }
 
   /*pagina contacto*/
-  .tarjetas{
+  .tarjetas {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -907,29 +895,29 @@ body{
     justify-content: center;
     padding: 10px;
   }
-  .cont-tarjeta{
+  .cont-tarjeta {
     display: flex;
     width: 145px;
   }
-  .cont-tarjeta a{
-    font-size: .7rem;
+  .cont-tarjeta a {
+    font-size: 0.7rem;
     text-decoration: none;
-   text-align: center;
-   color: #000000;
+    text-align: center;
+    color: #000000;
   }
-  .cont-tarjeta a:hover{
-   color: #e37ee0;
+  .cont-tarjeta a:hover {
+    color: #e37ee0;
   }
 
-  #mapa{
+  #mapa {
     margin: 0;
     width: 19rem;
   }
 
-  .formulario{
+  .formulario {
     width: 19rem;
   }
-  .cont-mapa{
+  .cont-mapa {
     display: flex;
     justify-content: center;
     width: 19rem;
@@ -939,18 +927,18 @@ body{
   .container-a {
     gap: 10px;
   }
-  iframe{
+  iframe {
     height: 200px;
   }
-  .search{
+  .search {
     display: flex;
     flex-direction: column;
   }
-  .isearch{
+  .isearch {
     display: flex;
     text-align: end;
   }
-  .product-card{
+  .product-card {
     height: 510px;
   }
   .producto-detalles {
@@ -961,41 +949,38 @@ body{
     margin-top: 30px;
     height: 750px;
   }
-  .imagen-details{
+  .imagen-details {
     height: 500px;
   }
-  #img-det{
+  #img-det {
     height: 100%;
   }
-.descripcion{
-  display: none;
+  .descripcion {
+    display: none;
+  }
+  .main-jf {
+    min-height: 70vh;
+  }
+  .titulo-tarjeta {
+    text-align: center;
+    font-size: 20px;
+    color: #973cad;
+  }
 }
-.main-jf{
-  min-height:70vh ;
-}
-.titulo-tarjeta{
-  text-align: center;
-  font-size: 20px;
-  color: #973cad;
-}
-
-} 
 
 @media (min-width: 767px) and (max-width: 1024px) {
-  
-header img {
-  width: 9rem;
-}
+  header img {
+    width: 9rem;
+  }
 
   /*carrusel*/
   #img-carrusel {
-    
     height: 21rem;
   }
 
   /*tarjeta quienes somos*/
 
-  #tex-quienesSomos-titulo{
+  #tex-quienesSomos-titulo {
     font-size: 2.6rem;
     margin-bottom: 20px;
   }
@@ -1010,20 +995,18 @@ header img {
     width: 20rem;
   }
 
-  .servicios{
+  .servicios {
     font-size: 4rem;
   }
   /*tarjetas info servicos*/
 
   #containerCards {
-  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
     height: 80rem;
- 
   }
 
   #card {
@@ -1036,23 +1019,22 @@ header img {
     gap: 5px;
   }
 
-  .carta{
+  .carta {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
   }
 
-  .card-body{
+  .card-body {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     height: 300px;
   }
-  .card-body h5{
+  .card-body h5 {
     font-size: 2.7rem;
   }
-  .card-body p{
+  .card-body p {
     font-size: 1.2rem;
   }
 
@@ -1061,7 +1043,6 @@ header img {
     background-size: cover;
     height: 20rem;
     width: 100%;
-
   }
 
   #tarj-2 {
@@ -1070,7 +1051,6 @@ header img {
     background-position: center;
     height: 20rem;
     width: 100%;
-
   }
 
   #tarj-3 {
@@ -1079,7 +1059,6 @@ header img {
     background-position: center;
     height: 20rem;
     width: 100%;
-
   }
 
   #tarj-4 {
@@ -1146,9 +1125,7 @@ header img {
     min-height: 80vh;
   }
 
-  
-  
-  .tablaFila .p-2{
+  .tablaFila .p-2 {
     width: 40%;
     display: flex;
     justify-content: space-between;
@@ -1156,32 +1133,32 @@ header img {
     background-color: #ececec;
     padding: 10px;
   }
-  .tablaFila th.border-0{
-   width: 50%;
+  .tablaFila th.border-0 {
+    width: 50%;
   }
 
-  .tablaFila h5{
+  .tablaFila h5 {
     font-size: 1rem;
     width: 120px;
   }
 
-  .producto-detalles{
+  .producto-detalles {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 1050px;
   }
-  .imagen-details{
+  .imagen-details {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  #img-det{
+  #img-det {
     width: 80%;
     height: 80%;
   }
-  .producto-detalles p{
+  .producto-detalles p {
     font-size: 1rem;
   }
 }
@@ -1201,16 +1178,15 @@ header img {
   font-size: xx-large;
 }
 
-
 @media (min-width: 1025px) and (max-width: 1920px) {
-  .seccion-final{
+  .seccion-final {
     margin-top: 30px;
   }
   #img-carrusel {
     width: 100%;
     height: 40rem;
   }
-  .producto-detalles p{
+  .producto-detalles p {
     font-size: 1rem;
   }
 }
