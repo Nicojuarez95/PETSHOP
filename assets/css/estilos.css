@@ -1,0 +1,1188 @@
+/*font-family: 'Palanquin Dark', sans-serif;*/
+/* #968dcc */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Palanquin Dark", sans-serif;
+}
+
+main {
+  min-height: 80vh;
+}
+
+body {
+  background-color: rgba(197, 196, 197, 0.18) !important;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #968dcc;
+  min-height: 8vh;
+}
+
+.patita{
+  width: 35px;
+  margin: 0;
+}
+
+
+header nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgb(236, 236, 236);
+}
+
+header nav a:hover {
+  color: rgb(63, 50, 66);
+}
+
+header img {
+  margin: 0.5rem;
+  width: 10rem;
+}
+
+.nav1,
+.nav2 {
+  display: flex;
+  gap: 40px;
+}
+
+/*carrusel*/
+
+#img-carrusel {
+  width: 100%;
+  height: 42rem;
+}
+
+/*footer*/
+
+footer {
+  background: #968dcc;
+  display: flex;
+  min-height: 5vh;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.container-redes {
+  display: flex;
+  gap: 20px;
+}
+
+.fotter-img {
+  width: 50px;
+  min-height: 20vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-footer {
+  width: 200px;
+}
+
+#textFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  color: #ececec;
+  font-family: "Palanquin Dark", sans-serif;
+}
+
+/*tarjetas informacion index*/
+
+.servicios {
+  text-align: center;
+  color: #968dcc;
+  font-size: 2.5rem;
+  font-family: "Palanquin Dark", sans-serif;
+  margin-bottom: 30px;
+}
+
+#containerCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  height: 30vh;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+#card {
+  display: flex;
+  margin-top: 22px;
+  width: 35rem;
+  height: 15.5rem;
+  border: 4px solid #968dcc;
+  background-color: #968dcc38;
+  align-content: center;
+  box-shadow: -5px -5px 10px 3px;
+}
+.carta{
+  display: flex;
+  align-items: center;
+}
+.card-title{
+  font-size: 2rem;
+  color: #565175 !important;
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+#tarj-1 {
+  background-image: url("https://www.udla.edu.ec/wp-content/uploads/2013/08/iStock-181857798.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  width: 10rem;
+}
+
+#tarj-2 {
+  background-image: url("https://d2qc4bb64nav1a.cloudfront.net/cdn/13/images/curso-cuidados-de-un-perro_l_secundaria_1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  width: 10rem;
+}
+
+#tarj-3 {
+  background-image: url("https://img.lalr.co/cms/2015/07/09125807/mascotas.jpg?size=sm");
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  width: 10rem;
+}
+
+#tarj-4 {
+  background-image: url("https://www.mitiendademascotas.com/web/angostura/wp-content/uploads/sites/12/2017/07/Apertura2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  width: 10rem;
+}
+
+h5,
+#textCard,
+#text-card,
+small {
+  font-family: "Palanquin Dark", sans-serif;
+}
+
+/*galeria index*/
+section {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+}
+
+section img {
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 1s ease;
+}
+
+section:hover {
+  width: 18.7rem;
+  opacity: 1;
+  filter: contrast(120%);
+  object-fit: cover;
+}
+
+#imageCardGalleria {
+  width: 5rem;
+  height: 20rem;
+}
+
+#imageCardGalleria:hover {
+  transform: scale(1);
+  opacity: 1;
+  width: 35rem;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/*tarjetas informacion*/
+
+#tajInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: justify;
+  color: #6a638c;
+}
+
+#img-quienesSomos {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  margin: 2rem;
+  box-shadow: -5px -5px 10px 3px;
+}
+
+#textoinfo {
+  width: 40rem;
+  margin: 2rem;
+}
+
+#text-quienesSomos {
+  font-size: 1.5rem;
+  font-family: "Palanquin Dark", sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  justify-items: flex-start;
+  text-align: justify;
+}
+
+#text-quienesSomos-titulo {
+  font-size: 2rem;
+  color: #968dcc;
+  font-family: "Palanquin Dark", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  justify-items: center;
+  text-align: start;
+}
+#tex-quienesSomos-titulo{
+  font-size: 3rem;
+  color: #968dcc;
+}
+/**/
+
+.main-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.form-label {
+  font-family: "Palanquin Dark", sans-serif;
+  margin: 5px;
+}
+
+.form-control {
+  font-family: "Palanquin Dark", sans-serif;
+}
+
+.formulario {
+  min-width: 30%;
+  background-color: rgba(153, 131, 108, 0.767);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Palanquin Dark", sans-serif;
+}
+
+#mapa {
+  border: 2px solid blanchedalmond;
+  margin-right: 10px;
+  gap: 2rem;
+}
+
+.titulo-mapa {
+  display: flex;
+  align-items: center;
+}
+
+.producto-detalles {
+  margin: 50px;
+  display: flex;
+  gap: 30px;
+  position: relative;
+  padding: 10px;
+  border: 5px solid #968dcc;
+  background-color: #968dcc7d;
+  border-radius: 20px;
+}
+
+
+.producto-detalles p{
+  font-size: 1.7rem;
+}
+.producto-detalles a{
+  text-decoration: none;
+}
+
+/*pagina details*/
+.imagen-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 60%;
+}
+.imagen-details img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.contenido-detalle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  width: 80%;
+}
+
+
+/*estilo cartas y search
+/*prueba*/
+
+.main-jf {
+  display: flex;
+  flex-direction: column;
+  min-height: 85vh;
+}
+
+.contenedor-jf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100vw;
+  padding: 15px;
+}
+
+.product-card {
+  width: 380px;
+  position: relative;
+  box-shadow: 0 2px 7px #dfdfdf;
+  background: #968dccb8;
+  border: 4px solid #968dcc;
+  border-radius: 20px;
+  box-shadow: 0 0 25px inset;
+}
+
+.badge {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  background: red;
+  color: #fff;
+  padding: 3px 10px;
+}
+
+.product-tumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background: white;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.product-tumb img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+}
+
+.product-details {
+  padding: 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.product-catagory {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  background-color:#968dcc;
+  margin-bottom: 18px;
+}
+
+.product-details h4 a {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  color: #363636;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+  color: #fbb72c;
+}
+
+.product-details p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  color: #999;
+}
+
+.product-bottom-details {
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.product-bottom-details div {
+  float: left;
+  width: 50%;
+}
+
+.product-price {
+  font-size: 18px !important;
+  color: #fbb72c !important;
+  font-weight: 600 !important;
+}
+
+.product-price small {
+  font-size: 80%;
+  font-weight: 400;
+  text-decoration: line-through;
+  display: flex;
+  flex-direction: row;
+  margin-right: 5px;
+}
+
+.product-links {
+  text-align: right;
+}
+
+.product-links button {
+  display: inline-block;
+  color: #000000;
+  transition: 0.3s;
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+#agotado{
+  color: red !important;
+}
+
+.product-links button:hover {
+  color: #fbb72c;
+}
+
+.ocultar {
+  display: none;
+}
+
+.descuento {
+  display: inline;
+  text-decoration: line-through;
+  color: red !important;
+}
+
+.precio {
+  display: inline;
+  margin-left: 15px;
+  color: rgb(97, 15, 138) !important;
+  font-size: 30px !important;
+}
+
+/*search*/
+
+.flexbox {
+  background: #201a76a5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  margin: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.search h3 {
+  font-weight: normal;
+}
+
+.search h1,
+.search h3 {
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 0 1px #0091c2;
+}
+
+.search>div {
+  display: inline-block;
+  position: relative;
+  filter: drop-shadow(0 1px #0091c2);
+}
+
+.isearch:after {
+  content: "";
+  background: white;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  top: 40px;
+  right: 2px;
+  transform: rotate(135deg);
+}
+
+.isearch input {
+  color: white;
+  font-size: 16px;
+  background: transparent;
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  border: solid 3px white;
+  outline: none;
+  border-radius: 35px;
+  transition: width 0.5s;
+}
+
+.isearch>input::placeholder {
+  color: #efefef;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+.isearch>input:focus::placeholder {
+  opacity: 1;
+}
+
+.isearch>input:focus,
+.isearch>input:not(:placeholder-shown) {
+  width: 250px;
+}
+
+/*contact*/
+.tarjetas{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 4vh;
+  align-items: center;
+  gap: 10px;
+}
+.cont-tarjeta{
+  border: 2px solid #968dcc;
+  background-color: #968dccb3;
+  border-radius: 20px;
+  width: 30vh;
+  height: 20vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px;
+  text-align: center;
+}
+
+.cont-tarjeta a{
+  text-decoration: none;
+  text-align: center;
+  color: #941fe8;
+}
+
+.cont-tarjeta a:hover{
+color: #80427e;
+}
+
+.titulo-tarjeta{
+  font-size: 20px;
+}
+
+.main-contacto {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin: 15px;
+  margin-top: 8vh;
+  align-items: self-start;
+  
+}
+.cont-mapa{
+  margin-top: 50px;
+  width: 460px;
+  
+}
+iframe{
+  width:100%;
+  height: 39rem;
+}
+#container-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.title-contact{
+  font-size: 25px;
+}
+.subtitle-contact{
+  font-size: 19px;
+  text-align: center;
+}
+
+.form-label {
+    font-family: 'Palanquin Dark', sans-serif;
+    margin: 5px;
+}
+
+.form-control {
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
+.formulario {
+    min-width: 32%;
+    border: 4px solid #968dcc;
+    background-color: #968dcc63;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Palanquin Dark', sans-serif;
+    width: 50vh;
+}
+
+#buttom-contact{
+  border: 1px solid white;
+  background-color: #6a638c;
+}
+.modal-body{
+  display: flex;
+  flex-direction: row;
+}
+.cartaCarrito{
+  width: 100%;
+  border: 1px solid rgb(154, 154, 154);
+}
+.tablaFila{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ececec;
+  padding: 10px;
+}
+#botonCarritoCantidad{
+  border: none;
+}
+
+/*contact*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+body{
+  overflow-x: hidden;
+}
+
+.Contacto {
+  margin-bottom: 3%;
+  flex-direction: column;
+}
+
+.container-a {
+    gap: 10px;
+}
+.main-contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+
+}
+.cont-mapa{
+  margin-top: 3vh;
+}
+ .tarjetas{
+  display: flex;
+  flex-direction: column;
+}
+.cont-tarjeta{
+  width: 24vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+  body {
+  background-color: rgb(233, 233, 233);
+  overflow-x: hidden;
+}
+
+  /*index */
+  /*header hay que cambiar por menu hamburguesa*/
+
+  /*carrusel*/
+  #img-carrusel {
+    width: 100%;
+   height: 12rem;
+  }
+
+  #tex-quienesSomos{
+    padding: 5px;
+  }
+  /*tarjeta quienes somos*/
+  #tex-quienesSomos-titulo{
+    font-size: 2.2rem;
+    margin: 0;
+    padding: 10px;
+    }
+
+  #tajInfo {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: justify;
+    color: #6a638c;
+  }
+
+  #img-quienesSomos {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+  }
+
+  #textoinfo {
+    width: 20rem;
+  }
+
+  /*tarjetas info servicos*/
+
+  #containerCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 80rem;
+  }
+
+  #card {
+    width: 20rem;
+    height: 40rem;
+    border: 4px solid #968dcc;
+    background-color: #968dcc38;
+    align-content: center;
+    text-align: center;
+  }
+
+  .carta{
+    flex-direction: column;
+  }
+  .card-body{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 300px;
+  }
+  .card-body h5{
+    font-size: 1.9rem;
+  }
+  .card-body p{
+    font-size: 1rem;
+  }
+
+  #tarj-1 {
+    background-image: url("https://www.udla.edu.ec/wp-content/uploads/2013/08/iStock-181857798.jpg");
+    background-size: cover;
+    background-position: center;
+    height:20rem;
+    width: 100%;
+
+  }
+
+  #tarj-2 {
+    background-image: url("https://d2qc4bb64nav1a.cloudfront.net/cdn/13/images/curso-cuidados-de-un-perro_l_secundaria_1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 100%;
+
+  }
+
+  #tarj-3 {
+    background-image: url("https://img.lalr.co/cms/2015/07/09125807/mascotas.jpg?size=sm");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 100%;
+
+  }
+
+  #tarj-4 {
+    background-image: url("https://www.mitiendademascotas.com/web/angostura/wp-content/uploads/sites/12/2017/07/Apertura2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 100%;
+  }
+  /*galeria*/
+  section {
+    display: none;
+  }
+
+  /*footer*/
+
+  footer {
+    background: #968dcc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1px;
+  }
+
+  .container-redes {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .fotter-img {
+    width: 50px;
+    min-height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo-footer {
+    width: 200px;
+  }
+
+  #textFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ececec;
+    font-family: "Palanquin Dark", sans-serif;
+  }
+
+  /*pagina contacto*/
+  .tarjetas{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 30px;
+    justify-content: center;
+    padding: 10px;
+  }
+  .cont-tarjeta{
+    display: flex;
+    width: 145px;
+  }
+  .cont-tarjeta a{
+    font-size: .7rem;
+    text-decoration: none;
+   text-align: center;
+   color: #000000;
+  }
+  .cont-tarjeta a:hover{
+   color: #e37ee0;
+  }
+
+  #mapa{
+    margin: 0;
+    width: 19rem;
+  }
+
+  .formulario{
+    width: 19rem;
+  }
+  .cont-mapa{
+    display: flex;
+    justify-content: center;
+    width: 19rem;
+    margin-bottom: 30px;
+  }
+
+  .container-a {
+    gap: 10px;
+  }
+  iframe{
+    height: 200px;
+  }
+  .search{
+    display: flex;
+    flex-direction: column;
+  }
+  .isearch{
+    display: flex;
+    text-align: end;
+  }
+  .product-card{
+    height: 510px;
+  }
+  .producto-detalles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin-top: 30px;
+}
+.descripcion{
+  display: none;
+}
+.main-jf{
+  min-height:70vh ;
+}
+.titulo-tarjeta{
+  text-align: center;
+  font-size: 20px;
+  color: #973cad;
+}
+} 
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  
+header img {
+  width: 9rem;
+}
+
+  /*carrusel*/
+  #img-carrusel {
+    
+    height: 21rem;
+  }
+
+  /*tarjeta quienes somos*/
+
+  #tex-quienesSomos-titulo{
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+  }
+
+  #img-quienesSomos {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+  }
+
+  #textoinfo {
+    width: 20rem;
+  }
+
+  .servicios{
+    font-size: 4rem;
+  }
+  /*tarjetas info servicos*/
+
+  #containerCards {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 80rem;
+ 
+  }
+
+  #card {
+    width: 40rem;
+    height: 65rem;
+    border: 4px solid #968dcc;
+    background-color: #968dcc38;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+
+  .carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  .card-body{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 300px;
+  }
+  .card-body h5{
+    font-size: 2.7rem;
+  }
+  .card-body p{
+    font-size: 1.2rem;
+  }
+
+  #tarj-1 {
+    background-image: url("https://www.udla.edu.ec/wp-content/uploads/2013/08/iStock-181857798.jpg");
+    background-size: cover;
+    height: 20rem;
+    width: 100%;
+
+  }
+
+  #tarj-2 {
+    background-image: url("https://d2qc4bb64nav1a.cloudfront.net/cdn/13/images/curso-cuidados-de-un-perro_l_secundaria_1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 100%;
+
+  }
+
+  #tarj-3 {
+    background-image: url("https://img.lalr.co/cms/2015/07/09125807/mascotas.jpg?size=sm");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 100%;
+
+  }
+
+  #tarj-4 {
+    background-image: url("https://www.mitiendademascotas.com/web/angostura/wp-content/uploads/sites/12/2017/07/Apertura2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 100%;
+  }
+  /*galeria*/
+  section {
+    display: none;
+  }
+
+  /*footer*/
+
+  footer {
+    background: #968dcc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1px;
+  }
+
+  .container-redes {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .fotter-img {
+    width: 50px;
+    min-height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo-footer {
+    width: 200px;
+  }
+
+  #textFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ececec;
+    font-family: "Palanquin Dark", sans-serif;
+  }
+
+  /*pagina contacto*/
+  .Contacto {
+    margin-bottom: 3%;
+    flex-direction: column;
+  }
+
+  .container-a {
+    gap: 10px;
+  }
+
+  main {
+    min-height: 80vh;
+  }
+
+  
+  
+  .tablaFila .p-2{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ececec;
+    padding: 10px;
+  }
+  .tablaFila th.border-0{
+   width: 50%;
+  }
+
+  .tablaFila h5{
+    font-size: 1rem;
+    width: 120px;
+  }
+
+  .producto-detalles{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .producto-detalles p{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    width: 100%;
+  }
+}
+#btn-carrito {
+  background: transparent;
+  border: none;
+  width: 5rem;
+  height: 5rem;
+}
+#btn-carrito i {
+  font-size: xx-large;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+  .seccion-final{
+    margin-top: 30px;
+  }
+  #img-carrusel {
+    width: 100%;
+    height: 40rem;
+  }
+  .producto-detalles p{
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,279 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/imagen/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="d-lg-none" href="./index.html"><img src="./assets/imagen/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="d-flex justify-content-center align-items-center flex-lg-row  flex-column">
+                        <nav class="nav1">
+                        <a href="#">Inicio</a>
+                        <a href="./assets/contact.html">Contacto</a>
+                        </nav>
+                        <a class="d-lg-block d-none" href="./index.html"><img src="./assets/imagen/logo.png" alt="Logo"></a>
+                        <nav class="nav2">
+                            <a href="./assets/juegos.html">Juguetes</a>
+                            <a href="./assets/farmacia.html">Farmacia</a>
+                        </nav>
+                    </div>
+                    <div class="d-flex justify-content-center m-4">
+                      <button
+                    type="button"
+                    class="btn btn-primary"
+                    id="btn-carrito"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <i class="bi bi-bag-heart-fill"></i>
+                    </button>  
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+        
+      <div
+        class="modal fade modal-lg"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">CARRITO</h1>
+              <button
+                id="modalClose"
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-tabla">
+                
+            </div>
+            <div class="modal-footer">
+              <p>Total:</p>
+              <p class="totalAcomulado">0</p>
+              <button id="modalDelete" type="button" class="btn btn-primary">
+                Vaciar Carrito
+              </button>
+              <button id="modalBuy" type="button" class="btn btn-primary">
+                Realizar Compra
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+        <!--carrusel-->
+        <div class="carrusel">
+        <div id="carouselExampleSlidesOnly " data-bs-interval="2000" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img id="img-carrusel" src="https://img.freepik.com/free-photo/group-portrait-adorable-puppies_53876-64778.jpg?w=900&t=st=1676602495~exp=1676603095~hmac=e7f12a1437ed1f5e99e8d2e766dcf74173f21161c580447050590f1d4e08b6e0%22class=%22d-block " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img id="img-carrusel" src="https://img.freepik.com/free-photo/front-view-funny-cute-dog-concept_23-2148786496.jpg?w=1060&t=st=1676603396~exp=1676603996~hmac=0c28cbc09082d0271696005d9f35f4d74d40326a13d54fb0c503cf7ceda09e1b" class="d-block " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img id="img-carrusel" src="https://www.clinicaveterinariaejea.com/wp-content/uploads/2020/03/Equipo-Clinica-Veterinaria-Ejea-1.jpeg"
+                        class="d-block " alt="...">
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--seccion tarjeta quienes somos-->
+       
+            <div id="tajInfo" >
+                    <div>
+                        <img id="img-quienesSomos" src="./assets/imagen/fotoLocal.png" alt="...">
+                    </div>
+                    <div id="textoinfo">
+                        <h5 id="tex-quienesSomos-titulo">Quienes Somos</h5>
+                         <p id="tex-quienesSomos">Pet Shop Mania es la primera y única cadena de tiendas del país
+                                especializada en productos y servicios para mascotas. Te damos una experiencia diferente
+                                de compra, ofreciendo productos y servicios de alta calidad que cumplen con las
+                                necesidades de las mascotas y la satisfacción de sus dueños.
+
+                                En Pet Shp Mania reconocemos a las mascotas como un miembro más de la familia, a las que
+                                debemos cuidar, proteger, y brindar el mejor cuidado para que tengan una excelente
+                                calidad de vida. Para ello ofrecemos la más amplia variedad en productos alimenticios,
+                                accesorios, farmacia, servicios experimentados (veterinaria, peluquería), mascotas para
+                                adopción , y mucho más!
+
+                                Podés visitar cualquiera de nuestras 30 sucursales, las cuales cuentan con modernas y
+                                cómodas instalaciones, o navegar por nuestro sitio, donde encontrarás el más amplio
+                                catálogo de productos, promociones y servicios.
+
+                                Pet Shop Mania, donde las mascotas están primero .</p>
+                    </div>
+            </div>
+       
+            <div><h2 class="servicios">Nuestros Servicios</h2></div>
+        <!--tarejtas info-->
+        
+        <div id="containerCards">
+            <div id="card" class="card">
+                <div class="carta">
+                    <div id="tarj-1" class="col-md-4">
+                       
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio Veterinario</h5>
+                            <p id="textCard" class="card-text">Contamos con los mejores profesionales de EJEA para atendender a tus mascotas. Brindando la mejor atencion del pais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="card" class="card ">
+                <div class="carta">
+                    <div id="tarj-2" class="col-md-4">
+                       
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Peluqueria Canina</h5>
+                            <p id="textCard" class="card-text">En Pet Shop Manía tenemos las mejores peluquerías para perros y gatos con los mejores peluqueros de mascotas que podrás encontrar.
+                                Consultá tu sucursal más cercana y cuidá de la apariencia de tu mejor amigo. ¡Solicitá turno!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="containerCards">
+            <div id="card" class="card ">
+                <div class="carta">
+                    <div id="tarj-3" class="col-md-4">
+                      
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Adiestramiento</h5>
+                            <p id="textCard" class="card-text">Tenemos clases de adiestramiento , para que eduques a tu mascota junto a los mejores profesionales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="card" class="card ">
+                <div class="carta">
+                    <div id="tarj-4" class="col-md-4">
+                    
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Guarderia de Mascotas</h5>
+                            <p id="textCard" class="card-text">Sabemos lo importante que es para vos tu mascota por eso tenemos el mejor hotel de mascotas del pais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+       
+<!--seccion galeria de imagenes-->
+        <section class="seccion-final">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/564x/c2/a6/f9/c2a6f9bd60bd5e72d52b8d353235aaf6.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/236x/c6/8f/a9/c68fa9eb69226d0ef50c04f8144c1ddd.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/564x/4c/27/46/4c274657c7a15579ec38cdd53eda399c.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/236x/f8/ad/fb/f8adfb8553bceca12e75be5bf05be509.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/564x/24/32/c3/2432c3e9035d0b4076ee2278353e8a12.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/564x/e6/6e/26/e66e263797337423c44a44d6a2420ee6.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/564x/3c/f0/ff/3cf0ff7ec353d7ef596a3b5bb3f37561.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/236x/1f/1f/b3/1f1fb3401327369fdaba5d80ff4ae8f8.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/564x/dc/b5/ad/dcb5ad1fcebcb1bb6ee89a870df240cd.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/236x/a7/e1/c1/a7e1c198f8a0eba18add3ec2aa91ab64.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/236x/7c/4e/36/7c4e365f9ccb97c8650c177615de6e4c.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/564x/5c/80/79/5c8079c7d43f183311dc364b6a276b3c.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/564x/1e/fd/2f/1efd2f6fcef00e68b389d3cdcbd840d8.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/564x/df/9d/2a/df9d2a47687eae50cb79be471e63e9ca.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/236x/1c/ff/12/1cff12fab95bf5f9c5a87915f3e6be0a.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/564x/73/3b/bc/733bbcaf188e4da2a2535c8c6f67faf0.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/236x/2a/fd/41/2afd4185c237dd1a5aae7df32cf715d7.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/236x/7c/4e/36/7c4e365f9ccb97c8650c177615de6e4c.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/736x/3b/0b/cb/3b0bcb6f89f34a6b4a7a4ff1eb1b6140.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/236x/8f/7e/7c/8f7e7c9c069e68a319c2432d9f30c29d.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/236x/95/4b/9f/954b9f720428fe627b27ea0c4a9e4f54.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/564x/6b/e1/a4/6be1a4cb980bdd1ac7b3b30ade154936.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/564x/c2/a6/f9/c2a6f9bd60bd5e72d52b8d353235aaf6.jpg"
+                alt="...">
+            <img id="imageCardGalleria" src="https://i.pinimg.com/236x/c6/8f/a9/c68fa9eb69226d0ef50c04f8144c1ddd.jpg"
+                alt="...">
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="container-redes">
+            <a href="https://www.instagram.com" target="_blank"><img class="fotter-img p-1"
+                    src="./assets/imagen/insta-svgrepo-com.svg" alt="foto-insta"></a>
+            <a href="https://es-la.facebook.com" target="_blank"><img class="fotter-img p-1"
+                    src="./assets/imagen/facebook-svgrepo-com.svg" alt="face-foto"></a>
+            <a href="https://www.whatsapp.com" target="_blank"><img class="fotter-img p-1"
+                    src="./assets/imagen/whatsapp-svgrepo-com.svg" alt="wts-foto"></a>
+        </div>
+        <div>
+          <img class="logo-footer" src="./assets/imagen/logo.png" alt="">
+        </div>
+        <div id="textFooter">
+           <h2><b>Visitanos</b></h2>
+           <p>Paraguay 2324 - CABA</p>
+           <P>Telefono:4786-3258</P>
+          
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./assets/js/carrito.js"></script>
+    <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script>
+</body>
+
+</html>
