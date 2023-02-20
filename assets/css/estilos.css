@@ -403,7 +403,7 @@ section:hover {
 
 .product-details {
   padding: 10px;
-  height: 25vh;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
